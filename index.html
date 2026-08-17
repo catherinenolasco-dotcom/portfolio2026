@@ -796,6 +796,21 @@ body > section:last-of-type {
     background-color: #f8fafc;
     transform: translateY(-2px);
   }
+  .cat-btn-linkedin {
+    background-color: #0a66c2;
+    color: #ffffff !important;
+    border: 2px solid #0a66c2;
+  }
+  .cat-btn-linkedin:hover {
+    background-color: #004182;
+    border-color: #004182;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+  }
+  .cat-btn-linkedin:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+  }
   .cat-metrics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -3288,7 +3303,7 @@ section, [id] {
     <a href="mailto:catherine.nolasco@gmail.com" class="cat-btn cat-btn-primary" style="background-color: #2563eb;">
       Contact Catherine
     </a>
-    <a href="https://linkedin.com/in/catherinenolasco" target="_blank" class="cat-btn cat-btn-secondary" style="background-color: transparent; color: white !important; border-color: #475569;">
+    <a href="https://linkedin.com/in/catherinenolasco" target="_blank" rel="noopener noreferrer" class="cat-btn cat-btn-linkedin">
       Connect on LinkedIn
     </a>
   </div>
