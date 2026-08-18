@@ -919,6 +919,43 @@ body > section:last-of-type {
     line-height: 1.5;
     color: #334155;
   }
+  .project-eyebrow {
+    color: #1d4ed8;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    margin: 0 0 0.7rem;
+    text-transform: uppercase;
+  }
+  .project-storyline {
+    color: #475569;
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  .project-card-topline {
+    align-items: center;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: space-between;
+  }
+  .project-card-topline .cat-project-tag { margin-bottom: 1.1rem; }
+  .project-case-number {
+    color: #94a3b8;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.1rem;
+  }
+  .cat-projects-grid { margin-top: 2.25rem; }
+  @media (max-width: 768px) {
+    .cat-projects-section { padding: 3.5rem 1rem !important; }
+    .cat-projects-section > div:first-child { margin-bottom: 2rem !important; }
+    .cat-projects-section .cat-project-card { padding: 1.4rem; }
+    .cat-projects-section .cat-project-title { margin-bottom: 1.1rem; }
+    .cat-projects-section .cat-project-detail { font-size: 0.94rem; }
+    .cat-projects-section .cat-takeaway-box { margin-top: 1.15rem; }
+  }
 
 
 
@@ -1743,19 +1780,20 @@ section, [id] {
 
 <section class="cat-projects-section" id="projects">
   <div style="text-align: center; margin-bottom: 3rem;">
-  <h2 style="font-size: 2.25rem; font-weight: 800; color: #0f172a !important; display: inline-block; border-bottom: 4px solid #38bdf8; padding-bottom: 12px; margin-bottom: 1.5rem;">AI-Enabled People Operations &amp; Transformation</h2>
-  <p style="color: #64748b; margin: 0 auto; max-width: 1100px; line-height: 1.65;">I design and operationalize AI agents, workflow automations, and data foundations that make the employee lifecycle faster, more consistent, and easier to scale. I continuously evaluate emerging agents and prototype employee-lifecycle use cases, translating the most useful capabilities into practical workflows for teams.</p>
+  <p class="project-eyebrow">Applied AI &amp; People Operations Systems</p>
+  <h2 style="font-size: 2.25rem; font-weight: 800; color: #0f172a !important; display: inline-block; border-bottom: 4px solid #38bdf8; padding-bottom: 12px; margin-bottom: 1.15rem;">Selected Transformation Work</h2>
+  <p class="project-storyline">AI agents create real value when they are anchored in well-designed processes, connected systems, and accountable ownership. These transformations show how I move from a high-friction People Operations problem to an AI-enabled workflow and the operating foundation that lets it scale.</p>
 </div>
   <div class="cat-projects-grid">
     
     <div class="cat-project-card">
       <div>
-        <span class="cat-project-tag">AI Agent Design</span>
+        <div class="project-card-topline"><span class="cat-project-tag">AI Agent Design</span><span class="project-case-number">01</span></div>
         <h3 class="cat-project-title">Employee Lifecycle Change Agent</h3>
         
         <p class="cat-project-detail">
           <strong>The Challenge</strong>
-          Employee changes required manual approval routing, repeated data entry, and follow-up across HR systems, creating avoidable delays and fragmented records.
+          Employee changes depended on manual approval routing, repeated data entry, and follow-up across HR systems, creating delays and fragmented records.
         </p>
         <p class="cat-project-detail">
           <strong>The Action</strong>
@@ -1763,17 +1801,17 @@ section, [id] {
         </p>
         <p class="cat-project-detail">
           <strong>The Result</strong>
-          Eliminated manual processing steps, creating a faster and more consistent path from employee request to approved HRIS update.
+          Eliminated manual processing steps and created a more consistent path from employee request to approved HRIS update.
         </p>
       </div>
       <div class="cat-takeaway-box">
-        <strong>Why it matters:</strong> This is how I approach AI adoption: start with high-friction workflows, connect the right systems, and create capacity for higher-judgment People work.
+        <strong>AI adoption lesson:</strong> I turn a defined operating pain point into an agent-assisted workflow with a clear system action and accountable approval path.
       </div>
     </div>
 
     <div class="cat-project-card">
       <div>
-        <span class="cat-project-tag">AI Workflow Automation</span>
+        <div class="project-card-topline"><span class="cat-project-tag">AI Workflow Adoption</span><span class="project-case-number">02</span></div>
         <h3 class="cat-project-title">AI-Powered Recruiting, Benefits &amp; Knowledge Work</h3>
         
         <p class="cat-project-detail">
@@ -1786,17 +1824,17 @@ section, [id] {
         </p>
         <p class="cat-project-detail">
           <strong>The Result</strong>
-          Replaced repetitive, email-driven work with standardized workflows that accelerate communication, improve consistency, and create a more reliable experience for employees and candidates.
+          Replaced repetitive, email-driven work with standardized workflows that accelerate communication, improve consistency, and support a more reliable experience for employees and candidates.
         </p>
       </div>
       <div class="cat-takeaway-box">
-        <strong>Why it matters:</strong> I move AI from experimentation into daily operations by selecting high-value use cases, designing for real user needs, and building repeatable workflows that teams will use.
+        <strong>AI adoption lesson:</strong> I take high-touch, ambiguous work and make it repeatable without losing the judgment and care that candidates and employees expect.
       </div>
     </div>
 
     <div class="cat-project-card">
       <div>
-        <span class="cat-project-tag">HRIS &amp; Data Foundation</span>
+        <div class="project-card-topline"><span class="cat-project-tag">Automation-Ready Foundation</span><span class="project-case-number">03</span></div>
         <h3 class="cat-project-title">ADP to Rippling: Building an Automation-Ready Foundation</h3>
         
         <p class="cat-project-detail">
@@ -1813,7 +1851,7 @@ section, [id] {
         </p>
       </div>
       <div class="cat-takeaway-box">
-        <strong>Why it matters:</strong> Effective AI adoption depends on connected systems, reliable data, and clear process ownership. This work shows I can build the operating foundation that lets automation deliver durable business value.
+        <strong>AI adoption lesson:</strong> I build the reliable data, workflow architecture, and ownership model that allow agents and automation to scale with confidence.
       </div>
     </div>
 
