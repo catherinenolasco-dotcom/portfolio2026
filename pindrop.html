@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A tailored portfolio by Catherine Nolasco for Pindrop's Director, HR Operations opportunity.">
+  <title>Catherine Nolasco | Director, HR Operations for Pindrop</title>
+  <style>
+    :root {
+      --ink: #10152b;
+      --ink-deep: #090d20;
+      --ink-soft: #202746;
+      --berry: #ad0a5c;
+      --magenta: #d00069;
+      --coral: #ff5d44;
+      --warm: #ffb563;
+      --paper: #f7f7fb;
+      --white: #ffffff;
+      --mist: #e7e8f2;
+      --slate: #536079;
+      --line: rgba(16, 21, 43, .13);
+      --success: #92e0ca;
+      --radius: 22px;
+      --shadow: 0 18px 45px rgba(9, 13, 32, .12);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    a { color: inherit; }
+    .wrap { margin: 0 auto; max-width: 1180px; padding: 0 28px; }
+    .eyebrow {
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      margin: 0 0 12px;
+      text-transform: uppercase;
+    }
+    .eyebrow.light { color: var(--success); }
+    .eyebrow.dark { color: var(--berry); }
+    .section-heading { font-size: clamp(2rem, 4vw, 3.6rem); letter-spacing: -.06em; line-height: 1.02; margin: 0; max-width: 820px; }
+    .section-lead { color: var(--slate); font-size: 1.06rem; line-height: 1.75; margin: 20px 0 0; max-width: 760px; }
+
+    .topline {
+      background: linear-gradient(90deg, var(--berry), var(--magenta), var(--coral));
+      color: var(--white);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+      padding: 9px 0;
+      text-align: center;
+    }
+    .site-nav {
+      background: rgba(9, 13, 32, .96);
+      border-bottom: 1px solid rgba(255, 255, 255, .13);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+    .nav-content { align-items: center; display: flex; gap: 24px; justify-content: space-between; min-height: 72px; }
+    .wordmark { font-size: .92rem; font-weight: 800; letter-spacing: -.02em; text-decoration: none; }
+    .wordmark span { color: var(--success); font-weight: 700; }
+    .nav-links { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a { color: rgba(255, 255, 255, .79); font-size: .82rem; font-weight: 700; text-decoration: none; }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--white); }
+
+    .hero {
+      background: var(--ink-deep);
+      color: var(--white);
+      isolation: isolate;
+      overflow: hidden;
+      padding: 88px 0 78px;
+      position: relative;
+    }
+    .hero::before {
+      background:
+        radial-gradient(circle at 80% 17%, rgba(255, 93, 68, .72) 0 1px, transparent 2px) 0 0 / 28px 28px,
+        radial-gradient(circle at 10% 86%, rgba(208, 0, 105, .65) 0, transparent 31%),
+        radial-gradient(circle at 87% 53%, rgba(173, 10, 92, .72) 0, transparent 30%);
+      content: "";
+      inset: 0;
+      opacity: .8;
+      position: absolute;
+      z-index: -2;
+    }
+    .hero::after {
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .11), transparent);
+      content: "";
+      height: 1px;
+      left: -12%;
+      position: absolute;
+      top: 62%;
+      transform: rotate(-8deg);
+      width: 124%;
+      z-index: -1;
+    }
+    .hero-grid { align-items: end; display: grid; gap: 48px; grid-template-columns: minmax(0, 1.55fr) minmax(270px, .75fr); }
+    .role-chip {
+      background: rgba(146, 224, 202, .12);
+      border: 1px solid rgba(146, 224, 202, .5);
+      border-radius: 99px;
+      color: var(--success);
+      display: inline-block;
+      font-size: .77rem;
+      font-weight: 800;
+      letter-spacing: .09em;
+      margin-bottom: 20px;
+      padding: 8px 13px;
+      text-transform: uppercase;
+    }
+    h1 { font-size: clamp(3rem, 6.6vw, 6.35rem); letter-spacing: -.075em; line-height: .91; margin: 0; max-width: 900px; }
+    .hero h1 .gradient-text { background: linear-gradient(95deg, #ff6d5a, #f33a91 45%, #efb5d0); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .hero-copy { color: rgba(255, 255, 255, .82); font-size: 1.12rem; line-height: 1.72; margin: 26px 0 0; max-width: 720px; }
+    .hero-copy strong { color: var(--white); }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .button {
+      align-items: center;
+      border: 1px solid transparent;
+      border-radius: 9px;
+      display: inline-flex;
+      font-size: .9rem;
+      font-weight: 800;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 19px;
+      text-decoration: none;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button.primary { background: var(--white); color: var(--ink); }
+    .button.primary:hover { background: #ffe1ec; }
+    .button.secondary { background: rgba(255, 255, 255, .05); border-color: rgba(255, 255, 255, .35); color: var(--white); }
+    .button.secondary:hover { background: rgba(255, 255, 255, .13); }
+    .candidate-card { background: rgba(13, 18, 43, .72); border: 1px solid rgba(255, 255, 255, .18); border-radius: var(--radius); box-shadow: 0 26px 60px rgba(0, 0, 0, .22); padding: 26px; }
+    .candidate-card .mini-label { color: var(--success); font-size: .7rem; font-weight: 800; letter-spacing: .1em; margin: 0 0 18px; text-transform: uppercase; }
+    .candidate-name { font-size: 1.28rem; font-weight: 800; letter-spacing: -.03em; margin: 0; }
+    .candidate-role { color: rgba(255, 255, 255, .68); font-size: .9rem; margin: 8px 0 24px; }
+    .evidence-list { border-top: 1px solid rgba(255, 255, 255, .14); list-style: none; margin: 0; padding: 16px 0 0; }
+    .evidence-list li { align-items: baseline; color: rgba(255, 255, 255, .84); display: flex; font-size: .86rem; gap: 9px; margin: 10px 0; }
+    .evidence-list li::before { color: var(--coral); content: "●"; font-size: .64rem; }
+
+    .proof-band { background: var(--white); border-bottom: 1px solid var(--line); }
+    .proof-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .proof { border-right: 1px solid var(--line); padding: 28px 24px; }
+    .proof:first-child { border-left: 1px solid var(--line); }
+    .proof-number { color: var(--berry); font-size: 2rem; font-weight: 850; letter-spacing: -.07em; line-height: 1; }
+    .proof-copy { color: var(--slate); font-size: .84rem; line-height: 1.45; margin-top: 8px; max-width: 180px; }
+
+    section { padding: 100px 0; }
+    .mandate { background: var(--paper); }
+    .mandate-grid { display: grid; gap: 48px; grid-template-columns: .78fr 1.22fr; margin-top: 48px; }
+    .pull-quote { border-left: 3px solid var(--coral); color: var(--ink); font-size: 1.27rem; font-weight: 700; letter-spacing: -.025em; line-height: 1.42; margin: 0; padding-left: 22px; }
+    .pillars { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); }
+    .pillar { background: var(--white); border: 1px solid var(--line); border-radius: 16px; min-height: 174px; padding: 23px; }
+    .pillar-number { color: var(--coral); font-size: .74rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
+    .pillar h3 { font-size: 1.08rem; letter-spacing: -.025em; line-height: 1.2; margin: 12px 0 9px; }
+    .pillar p { color: var(--slate); font-size: .9rem; line-height: 1.55; margin: 0; }
+
+    .builds { background: var(--ink); color: var(--white); overflow: hidden; position: relative; }
+    .builds::before { background: radial-gradient(circle, rgba(255, 93, 68, .22) 0 1px, transparent 2px) 0 0 / 18px 18px; content: ""; height: 350px; opacity: .75; position: absolute; right: -85px; top: 50px; width: 350px; }
+    .builds .section-lead { color: rgba(255, 255, 255, .72); }
+    .build-grid { display: grid; gap: 16px; grid-template-columns: repeat(2, 1fr); margin-top: 46px; position: relative; }
+    .build-card { background: rgba(255, 255, 255, .055); border: 1px solid rgba(255, 255, 255, .16); border-radius: 18px; min-height: 315px; padding: 28px; }
+    .build-status { align-items: center; color: var(--success); display: flex; font-size: .72rem; font-weight: 800; gap: 8px; letter-spacing: .08em; text-transform: uppercase; }
+    .build-status::before { background: var(--success); border-radius: 50%; content: ""; height: 7px; width: 7px; }
+    .build-card h3 { font-size: 1.38rem; letter-spacing: -.04em; line-height: 1.1; margin: 21px 0 14px; }
+    .build-card p { color: rgba(255, 255, 255, .75); font-size: .93rem; line-height: 1.62; margin: 0; }
+    .fit-callout { border-top: 1px solid rgba(255, 255, 255, .15); color: #ffe4ed; font-size: .86rem; line-height: 1.55; margin-top: 19px; padding-top: 16px; }
+    .fit-callout strong { color: var(--white); }
+
+    .execution { background: var(--white); }
+    .execution-grid { display: grid; gap: 42px; grid-template-columns: 1.1fr .9fr; margin-top: 46px; }
+    .case-sequence { border-top: 1px solid var(--line); }
+    .case-line { align-items: start; border-bottom: 1px solid var(--line); display: grid; gap: 20px; grid-template-columns: 42px 1fr; padding: 22px 0; }
+    .case-line span { color: var(--berry); font-size: .79rem; font-weight: 900; letter-spacing: .1em; padding-top: 4px; }
+    .case-line h3 { font-size: 1.08rem; letter-spacing: -.025em; margin: 0 0 7px; }
+    .case-line p { color: var(--slate); font-size: .91rem; line-height: 1.58; margin: 0; }
+    .outcome-panel { background: linear-gradient(145deg, #fff1f5, #fff8f4); border: 1px solid #f0cadb; border-radius: var(--radius); padding: 30px; }
+    .outcome-panel .eyebrow { color: var(--berry); }
+    .outcome-list { list-style: none; margin: 23px 0 0; padding: 0; }
+    .outcome-list li { border-top: 1px solid rgba(173, 10, 92, .16); color: var(--ink-soft); font-size: .92rem; line-height: 1.5; padding: 15px 0; }
+    .outcome-list strong { color: var(--berry); }
+
+    .roadmap { background: #f3f1f7; }
+    .roadmap-grid { display: grid; gap: 16px; grid-template-columns: repeat(4, 1fr); margin-top: 44px; }
+    .roadmap-card { background: var(--white); border-top: 4px solid var(--berry); border-radius: 13px; box-shadow: 0 7px 22px rgba(16, 21, 43, .06); padding: 23px; }
+    .roadmap-card:nth-child(2) { border-top-color: var(--magenta); }
+    .roadmap-card:nth-child(3) { border-top-color: var(--coral); }
+    .roadmap-card:nth-child(4) { border-top-color: var(--warm); }
+    .roadmap-window { color: var(--berry); font-size: .77rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+    .roadmap-card h3 { font-size: 1.08rem; letter-spacing: -.025em; margin: 13px 0 9px; }
+    .roadmap-card p { color: var(--slate); font-size: .88rem; line-height: 1.55; margin: 0; }
+
+    .principles { background: var(--paper); }
+    .principle-list { display: grid; gap: 12px; grid-template-columns: repeat(3, 1fr); margin-top: 40px; }
+    .principle { border-top: 1px solid var(--ink); padding-top: 18px; }
+    .principle h3 { font-size: 1.04rem; letter-spacing: -.025em; margin: 0 0 10px; }
+    .principle p { color: var(--slate); font-size: .91rem; line-height: 1.6; margin: 0; }
+
+    .closing { background: linear-gradient(118deg, var(--berry), #791043 52%, var(--ink-deep)); color: var(--white); overflow: hidden; position: relative; }
+    .closing::after { border: 1px solid rgba(255,255,255,.22); border-radius: 50%; content: ""; height: 470px; position: absolute; right: -140px; top: -210px; width: 470px; }
+    .closing-content { position: relative; z-index: 1; }
+    .closing .section-heading { max-width: 760px; }
+    .closing .section-lead { color: rgba(255, 255, 255, .8); }
+    .closing-note { color: rgba(255, 255, 255, .61); font-size: .75rem; margin: 24px 0 0; max-width: 760px; }
+    footer { background: var(--ink-deep); color: rgba(255,255,255,.58); font-size: .78rem; padding: 22px 0; }
+    footer .wrap { display: flex; gap: 16px; justify-content: space-between; }
+
+    @media (max-width: 900px) {
+      .hero-grid, .mandate-grid, .execution-grid { grid-template-columns: 1fr; }
+      .candidate-card { max-width: 520px; }
+      .proof-grid { grid-template-columns: repeat(2, 1fr); }
+      .proof:nth-child(3) { border-left: 1px solid var(--line); }
+      .roadmap-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 680px) {
+      .wrap { padding: 0 18px; }
+      .topline { font-size: .68rem; line-height: 1.35; padding: 8px 16px; }
+      .nav-content { min-height: 64px; }
+      .nav-links { display: none; }
+      .hero { padding: 60px 0 56px; }
+      .hero-grid { gap: 32px; }
+      h1 { font-size: clamp(2.85rem, 15vw, 4.2rem); }
+      .hero-copy { font-size: 1rem; }
+      .cta-row { align-items: stretch; flex-direction: column; }
+      .button { width: 100%; }
+      .proof-grid, .pillars, .build-grid, .roadmap-grid, .principle-list { grid-template-columns: 1fr; }
+      .proof, .proof:first-child, .proof:nth-child(3) { border-left: none; border-right: none; border-top: 1px solid var(--line); padding: 23px 0; }
+      .proof:first-child { border-top: none; }
+      .mandate-grid { gap: 30px; }
+      section { padding: 70px 0; }
+      .section-lead { font-size: 1rem; }
+      .build-card { min-height: 0; }
+      footer .wrap { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topline">Role-specific portfolio prepared for Pindrop's Director, HR Operations opportunity</div>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="wrap nav-content">
+      <a class="wordmark" href="#top">Catherine Nolasco <span>/ Pindrop</span></a>
+      <ul class="nav-links">
+        <li><a href="#mandate">Operating mandate</a></li>
+        <li><a href="#builds">AI builds</a></li>
+        <li><a href="#roadmap">120 days</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="role-chip">Director, HR Operations · Pindrop</div>
+          <h1 id="hero-title">Build HR operations people can <span class="gradient-text">trust</span>, at the speed Pindrop needs.</h1>
+          <p class="hero-copy">I am an <strong>AI-enabled People Operations builder</strong> who turns fragmented HR processes into accurate, auditable, and employee-centered operating systems. My work spans HRIS modernization, payroll and benefits governance, immigration, compliance, SOPs, and practical AI agents that reduce friction without compromising controls.</p>
+          <div class="cta-row">
+            <a class="button primary" href="mailto:catherine.nolasco@gmail.com">Start a conversation</a>
+            <a class="button secondary" href="#builds">Explore Pindrop-fit AI builds</a>
+            <a class="button secondary" href="https://drive.google.com/file/d/1_tBnr280dYmW5utGza_MhD1QpC6rqQoB/view?usp=sharing" target="_blank" rel="noopener noreferrer">View executive resume</a>
+          </div>
+        </div>
+        <aside class="candidate-card" aria-label="Candidate snapshot">
+          <p class="mini-label">Candidate snapshot</p>
+          <p class="candidate-name">Catherine Nolasco, SHRM-CP</p>
+          <p class="candidate-role">Director / Head of People Operations<br>AI workflow and agent builder</p>
+          <ul class="evidence-list">
+            <li>13+ years building People Operations infrastructure</li>
+            <li>Global HR operations across 8 countries</li>
+            <li>Claude, ChatGPT, Gemini, n8n, Zapier, and Make</li>
+            <li>HRIS, payroll, benefits, immigration, audit, and compliance leadership</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="proof-band" aria-label="Selected evidence">
+      <div class="wrap proof-grid">
+        <div class="proof"><div class="proof-number">13+ years</div><div class="proof-copy">Progressive People Operations leadership in high-growth, enterprise, and global environments.</div></div>
+        <div class="proof"><div class="proof-number">60%+</div><div class="proof-copy">Manual processing effort reduced after HRIS modernization and workflow automation.</div></div>
+        <div class="proof"><div class="proof-number">100%</div><div class="proof-copy">Mandatory compliance signature completion across policy reviews and training modules.</div></div>
+        <div class="proof"><div class="proof-number">8 countries</div><div class="proof-copy">People Operations programs supported across the United States, India, Canada, Europe, and beyond.</div></div>
+      </div>
+    </section>
+
+    <section class="mandate" id="mandate" aria-labelledby="mandate-title">
+      <div class="wrap">
+        <p class="eyebrow dark">A direct response to the operating mandate</p>
+        <h2 class="section-heading" id="mandate-title">The operational backbone should make accuracy and urgency work together.</h2>
+        <div class="mandate-grid">
+          <p class="pull-quote">Pindrop needs more than process administration. It needs a trusted People Operations system that is ready for growth, scrutiny, change, and responsible automation.</p>
+          <div class="pillars">
+            <article class="pillar"><div class="pillar-number">01 · Trusted data</div><h3>Optimize the system of record</h3><p>Repair data quality, build HRIS workflows and integrations, strengthen controls, and make people data useful to Finance and leadership.</p></article>
+            <article class="pillar"><div class="pillar-number">02 · Repeatable operations</div><h3>Turn expertise into durable SOPs</h3><p>Document the work across payroll, benefits, immigration, onboarding, offboarding, and compliance so the operation is scalable and audit-ready.</p></article>
+            <article class="pillar"><div class="pillar-number">03 · Practical AI</div><h3>Introduce governed self-service</h3><p>Use AI agents where a clear workflow, reliable data, approval path, and human escalation make automation genuinely useful.</p></article>
+            <article class="pillar"><div class="pillar-number">04 · Business partnership</div><h3>Give partners confidence</h3><p>Make HR Operations a dependable partner to Finance, Legal, IT, Security, and HRBPs through precise data, sound judgment, and transparent controls.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="builds" id="builds" aria-labelledby="builds-title">
+      <div class="wrap">
+        <p class="eyebrow light">AI builds most relevant to Pindrop</p>
+        <h2 class="section-heading" id="builds-title">Verified work that maps to high-trust HR operations.</h2>
+        <p class="section-lead">Each build below has been created or deployed in People Operations. The Pindrop-fit application clarifies how I would adapt the approach to the role’s HRIS, SOP, benefits, compliance, and self-service priorities.</p>
+        <div class="build-grid">
+          <article class="build-card">
+            <div class="build-status">Verified build</div>
+            <h3>Employee Lifecycle Change Agent</h3>
+            <p>Designed and deployed a Claude + n8n agent that routes approvals and triggers HRIS record updates for employee-lifecycle transactions, eliminating manual processing steps.</p>
+            <p class="fit-callout"><strong>Pindrop-fit application:</strong> A governed UKG Ready employee-change workflow with manager approvals, HRIS updates, clear exception handling, and a traceable audit path.</p>
+          </article>
+          <article class="build-card">
+            <div class="build-status">Verified build</div>
+            <h3>Audit-Ready People Knowledge Studio</h3>
+            <p>Built AI-assisted policy and knowledge workflows for severance, immigration, and restructuring documentation using Claude, ChatGPT, Gemini, and Notion with human review.</p>
+            <p class="fit-callout"><strong>Pindrop-fit application:</strong> A controlled SOP, policy, immigration, and audit-evidence layer that helps the People team retrieve the right information while preserving ownership and review.</p>
+          </article>
+          <article class="build-card">
+            <div class="build-status">Verified build</div>
+            <h3>Benefits &amp; Open Enrollment Automation</h3>
+            <p>Built n8n + Claude workflows that replaced manual, email-driven benefits communication with automated employee experiences and clearer operational follow-through.</p>
+            <p class="fit-callout"><strong>Pindrop-fit application:</strong> Event-driven benefits and total-rewards communication that helps employees understand choices while routing complex questions to the right human partner.</p>
+          </article>
+          <article class="build-card">
+            <div class="build-status">Verified foundation</div>
+            <h3>Automation-Ready HRIS &amp; Data Layer</h3>
+            <p>Led HRIS data mapping, workflow architecture, testing, training, and go-live across the US and India. The work automated three core workflows and reduced manual effort by more than 60%.</p>
+            <p class="fit-callout"><strong>Pindrop-fit application:</strong> A UKG Ready optimization roadmap centered on data integrity, integrations, self-service, reporting, and the operating controls that make AI adoption dependable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="execution" aria-labelledby="execution-title">
+      <div class="wrap">
+        <p class="eyebrow dark">Evidence of execution</p>
+        <h2 class="section-heading" id="execution-title">The operating model behind the automation.</h2>
+        <div class="execution-grid">
+          <div class="case-sequence">
+            <article class="case-line"><span>01</span><div><h3>HRIS modernization with a measurable operating result</h3><p>Led an ADP-to-Rippling transformation across data mapping, localized configuration, workflow redesign, testing, training, and go-live readiness. Completed go-live with no known data loss or payroll interruption.</p></div></article>
+            <article class="case-line"><span>02</span><div><h3>Compliance, audit, and immigration operations built for scrutiny</h3><p>Led People Operations compliance strategy, I-9 governance, policy lifecycle management, immigration coordination, annual compliance calendars, and audit-ready documentation across distributed workforces.</p></div></article>
+            <article class="case-line"><span>03</span><div><h3>Finance-ready people data and cross-functional delivery</h3><p>Owned HRIS data governance and automated workflows supporting accurate headcount and compliance reporting, while partnering across payroll, Finance, Legal, IT, and external counsel.</p></div></article>
+          </div>
+          <aside class="outcome-panel">
+            <p class="eyebrow">What this means for Pindrop</p>
+            <h3 style="font-size:1.55rem;letter-spacing:-.045em;line-height:1.12;margin:0;">A build plan with controls, not a collection of tools.</h3>
+            <ul class="outcome-list">
+              <li><strong>Systems:</strong> Start with HRIS data quality, integrations, workflow architecture, and reporting discipline.</li>
+              <li><strong>Process:</strong> Make SOPs accessible, owned, reviewed on a cadence, and resilient to organizational change.</li>
+              <li><strong>AI:</strong> Automate narrowly at first, retain human decisions where they matter, then measure and expand with confidence.</li>
+              <li><strong>Partners:</strong> Treat Finance, Legal, IT, Security, HRBPs, and employees as co-designers of the operating model.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadmap" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="wrap">
+        <p class="eyebrow dark">A 120-day starting point</p>
+        <h2 class="section-heading" id="roadmap-title">Stabilize, standardize, then scale responsibly.</h2>
+        <p class="section-lead">This is an initial point of view based on the job description, not a promise to act before learning Pindrop’s people, systems, and constraints.</p>
+        <div class="roadmap-grid">
+          <article class="roadmap-card"><div class="roadmap-window">Days 1-30</div><h3>Diagnose and align</h3><p>Assess UKG data quality, payroll and benefits controls, SOP coverage, audit readiness, and the needs of Finance, Legal, IT, Security, HRBPs, and the HR Operations team.</p></article>
+          <article class="roadmap-card"><div class="roadmap-window">Days 31-60</div><h3>Stabilize the highest-risk work</h3><p>Establish control owners, resolve material data and workflow gaps, define the compliance calendar, and create a visible cadence for operating metrics and escalation.</p></article>
+          <article class="roadmap-card"><div class="roadmap-window">Days 61-90</div><h3>Standardize the system</h3><p>Prioritize UKG workflow and integration improvements, formalize high-volume SOPs, strengthen training and self-service, and publish a practical data-quality scorecard.</p></article>
+          <article class="roadmap-card"><div class="roadmap-window">Days 91-120</div><h3>Prove the first AI use case</h3><p>Launch one governed, high-friction self-service workflow with a clear baseline, human escalation route, adoption measures, and a decision framework for scale.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles" aria-labelledby="principles-title">
+      <div class="wrap">
+        <p class="eyebrow dark">Principles of trusted automation</p>
+        <h2 class="section-heading" id="principles-title">AI should make HR operations more dependable, not merely faster.</h2>
+        <div class="principle-list">
+          <article class="principle"><h3>Human judgment stays visible</h3><p>Agents support defined decisions and workflows. Employees and leaders know when and how to reach a human owner for exceptions, nuance, or support.</p></article>
+          <article class="principle"><h3>Reliable data comes first</h3><p>AI cannot compensate for weak HRIS data or unclear ownership. Data quality, access, controls, and integrations are prerequisites for scale.</p></article>
+          <article class="principle"><h3>Adoption is an operating outcome</h3><p>Each workflow needs a measurable purpose, tested user experience, documented process, training, feedback loop, and a clear definition of success.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" id="contact" aria-labelledby="contact-title">
+      <div class="wrap closing-content">
+        <p class="eyebrow light">A conversation about what to build next</p>
+        <h2 class="section-heading" id="contact-title">I would welcome the chance to help Pindrop build trusted, AI-enabled HR Operations.</h2>
+        <p class="section-lead">The work I am most energized by is creating the practical operating foundation that lets ambitious companies move quickly while protecting trust, data quality, compliance, and the employee experience.</p>
+        <div class="cta-row">
+          <a class="button primary" href="mailto:catherine.nolasco@gmail.com">Email Catherine</a>
+          <a class="button secondary" href="https://linkedin.com/in/catherinenolasco" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+        </div>
+        <p class="closing-note">This is an independently prepared, role-specific portfolio page for Pindrop's Director, HR Operations opportunity. It is not affiliated with, endorsed by, or an official property of Pindrop.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><span>© 2026 Catherine Nolasco. All rights reserved.</span><span>Prepared for Pindrop's Director, HR Operations opportunity.</span></div></footer>
+</body>
+</html>
