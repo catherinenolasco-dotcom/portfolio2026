@@ -49,13 +49,13 @@ Where I have done the work, and how far it has travelled
  More from this role
  Built New Hire and Offboarding Employee Action Forms with an owner on every task, automated reminders, and approvals routed through Payroll, IT, People, and the hiring manager, triggering preboarding within 24 hours of offer acceptance.
  Served as the liaison between outside immigration counsel and employees for H-1B, STEM OPT, green card, and dependent filings.
- Built a severance calculator and drafter and a reorganization cost model with Claude and Gemini, cutting drafting time from 20-30 minutes per employee to about 3 hours total for all 18 employees affected.
+ Built a severance calculator and drafter and a reorganization cost model with Claude and Gemini, cutting drafting time from 20-30 minutes per employee to about 3 hours total for the whole group.
  Led the HRIS consolidation onto Rippling from Justworks and ADP Workforce Now, and managed Rippling as Employer of Record for employees in Dubai and the UK.
  Led 'Get Fit,' a review of HR vendor and tech stack spend that found $150K in savings and cost avoidance, including replacing an underperforming ATS with Workable.
  People Operations Manager Munchery Oct 2017 - Dec 2018 San Francisco, CA 
  Managed People Operations for 700+ employees across onboarding, benefits, payroll, compliance, and HRIS, including I-9 compliance and multi-state FLSA, COBRA, and ACA requirements. A proactive audit uncovered 30+ fraudulent Social Security cards.
  Redesigned New Hire Orientation, improving onboarding efficiency by 75%, and digitized HR workflows, reducing paper usage by 80%.
- Managed a WARN Act-compliant closure of the LA kitchen affecting close to 100 employees, including help applying for unemployment benefits.
+ Managed a WARN Act-compliant closure of the LA kitchen affecting a large group of employees, including help applying for unemployment benefits.
  Earlier experience
  HR Generalist (Contract), Off the Grid | Jul 2017 - Oct 2017
  Employee Success Generalist (Contract), FinancialForce (Certinia) | Feb 2017 - Jul 2017. Trained 150+ employees on the HRIS.
