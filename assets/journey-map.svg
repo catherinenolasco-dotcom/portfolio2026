@@ -1,0 +1,14 @@
+<svg class="sc jm" viewBox="0 0 1000 200" role="img" aria-label="Illustrated map: Southern California on the left, the Golden Gate Bridge and San Francisco Bay Area on the right, with a pin that moves between them as you scroll through my roles">
+<circle class="y pop" cx="110" cy="62" r="24"/><path class="a" d="M60 62h-14M174 62h14M110 12v-12M82 30l-9-9M138 30l9-9" opacity=".5"/>
+<path class="a" d="M300 172q10-48 -4-96"/><path class="a" d="M296 76q-22-22-48-10M296 76q-6-28-30-34M296 76q18-30 46-18M296 76q10-26 36-26M296 76q-2 14-14 24"/><path class="a" d="M370 172q10-35 -4-70"/><path class="a" d="M366 102q-22-22-48-10M366 102q-6-28-30-34M366 102q18-30 46-18M366 102q10-26 36-26M366 102q-2 14-14 24"/>
+<path class="a" d="M20 176 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0" opacity=".85"/><path class="a" d="M30 192 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0" opacity=".45"/>
+<path class="g" d="M470 20q40 14 80 0t80 0 80 0 80 0 80 0 80 0v14q-40 12-80 0t-80 0-80 0-80 0-80 0-80 0z" opacity=".5"/>
+<path class="a" d="M560 135H940" stroke-width="5"/><path class="a" d="M540 135H560M940 135H985" stroke-width="5" opacity=".6"/>
+<path class="a" d="M644 46V135M656 46V135M644 66H656M644 90H656M644 114H656M844 46V135M856 46V135M844 66H856M844 90H856M844 114H856"/>
+<path class="a" d="M560 132Q612 112 650 48M650 48Q750 130 850 48M850 48Q888 112 940 132"/>
+<path class="a" d="M670.0 62.8V135M690.0 74.2V135M710.0 82.4V135M730.0 87.4V135M750.0 89.0V135M770.0 87.4V135M790.0 82.4V135M810.0 74.2V135M830.0 62.8V135M582.5 122.2V135M605.0 105.0V135M627.5 80.2V135M872.5 80.2V135M895.0 105.0V135M917.5 122.2V135" opacity=".5" stroke-width="1.6"/>
+<path class="a" d="M530 176 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0" opacity=".85"/><path class="a" d="M540 192 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0 q10-8 20 0 t20 0" opacity=".45"/>
+<path class="a dash trail" d="M240 150Q495 -70 750 125" opacity=".35"/>
+<path class="a trailp" d="M240 150Q495 -70 750 125" stroke="var(--blue2)" stroke-width="3.2"/>
+<g class="pinmv" transform="translate(750 125)"><path class="y" d="M0 0C-15-18 -15-36 0-36S15-18 0 0Z"/><circle cx="0" cy="-25" r="5.5" fill="#0e0e10"/></g>
+</svg>
